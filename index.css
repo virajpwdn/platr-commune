@@ -66,3 +66,16 @@ html, body {
     flex-wrap: wrap;
     gap: 10;
 }
+
+.filter-btn {
+    padding: 1em 2em;
+    margin: 1em 0;
+    background-color: slateblue;
+    border: none;
+    color:  white;
+    cursor: pointer;
+}
+
+.filter-btn:active{
+    scale: 0.95;
+}

@@ -66,4 +66,17 @@ html, body {
   gap: 10px;
   display: flex;
 }
+
+.filter-btn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #6a5acd;
+  border: none;
+  margin: 1em 0;
+  padding: 1em 2em;
+}
+
+.filter-btn:active {
+  scale: .95;
+}
 /*# sourceMappingURL=platr.9e4c6fd2.css.map */
