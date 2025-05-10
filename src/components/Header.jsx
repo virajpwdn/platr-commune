@@ -1,21 +1,32 @@
-import { LOGO_URL } from "../utils/constants"
+import React, { useState } from 'react';
 
-const Header = ()=>{
-    return (
-        <div className="Heading">
-            <div className="logo">
-                <img src={LOGO_URL} alt="" />
-            </div>
-            <div className="navlinks">
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
+const Header = () => {
 
-export default Header
+  let [btnName , setBtnName] = useState('Login');
+  // Creating a state variable
+
+  return (
+    <div className="header p-3 m-5">
+      <div className="logo">
+        <img
+          className="logo"
+          src="https://img.freepik.com/premium-vector/food-ordering-app-logo-with-points-fork-shapes-center_666184-195.jpg"
+          alt=""
+        />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+          <button className='login' onClick={()=> {
+            btnName === "Login" ? setBtnName('Logout') : setBtnName('Login');
+          } }>{btnName}</button>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Header;

@@ -9,73 +9,92 @@ html, body {
   width: 100%;
 }
 
-.Heading{
-    width: 100%;
-    height: 50%;
+
+.header{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    border: 1px solid black;
-    margin-top: 10px;
-    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0px 50px;
+
 }
 
-.Heading > .logo > img{
-    height: 100px;
-    width: 100px;
+.logo{
+    width: 70px;
 }
 
-.Heading > .navlinks > ul {
+.nav-items ul{
     display: flex;
-    gap: 30px;
     list-style-type: none;
 }
 
-.ResturantCardContainer {
-    width: 200px;
-    height: 300px;
-    border: 1px solid black;
-}
-
-.search {
-    padding: 20px;
-}
-
-.app{
+.nav-items > ul > li{
     padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.res-container {
-    width: 200px;
-    height: 300px;
+.restaurant-card{
+  width: 250px;
+  border-radius: 20px;
+  background-color: bisque;
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+ 
+.cardImage{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
 }
 
-.res-container:hover{
-    border: 1px black solid;
-    cursor: pointer;
+.Search{
+    margin-bottom: 20px;
+    padding: 10px;
+
 }
 
-.res-container > .res-logo{
-    height: 50%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.content {
+.restaurant-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 10;
 }
 
-.filter-btn {
-    padding: 1em 2em;
-    margin: 1em 0;
-    background-color: slateblue;
-    border: none;
-    color:  white;
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-cards{
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: rgb(185, 185, 185);
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.login{
+    padding: 0 30px;
     cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.filter-btn:active{
-    scale: 0.95;
+.shimmer-container {
+    display: flex;
+}
+
+.shimmer-card {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #f0f0f0;
 }

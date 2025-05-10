@@ -18443,76 +18443,94 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _constants = require("../utils/constants");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
 const Header = ()=>{
+    _s();
+    let [btnName, setBtnName] = (0, _react.useState)('Login');
+    // Creating a state variable
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "Heading",
+        className: "header p-3 m-5",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "logo",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: (0, _constants.LOGO_URL),
+                    className: "logo",
+                    src: "https://img.freepik.com/premium-vector/food-ordering-app-logo-with-points-fork-shapes-center_666184-195.jpg",
                     alt: ""
                 }, void 0, false, {
                     fileName: "src/components/Header.jsx",
-                    lineNumber: 7,
-                    columnNumber: 17
+                    lineNumber: 11,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 6,
-                columnNumber: 13
+                lineNumber: 10,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "navlinks",
+                className: "nav-items",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 11,
-                            columnNumber: 21
+                            lineNumber: 19,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "About Us"
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 12,
-                            columnNumber: 21
+                            lineNumber: 20,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Contact Us"
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 13,
-                            columnNumber: 21
+                            lineNumber: 21,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "src/components/Header.jsx",
-                            lineNumber: 14,
-                            columnNumber: 21
+                            lineNumber: 22,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "login",
+                            onClick: ()=>{
+                                btnName === "Login" ? setBtnName('Logout') : setBtnName('Login');
+                            },
+                            children: btnName
+                        }, void 0, false, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 23,
+                            columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Header.jsx",
-                    lineNumber: 10,
-                    columnNumber: 17
+                    lineNumber: 18,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 9,
-                columnNumber: 13
+                lineNumber: 17,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.jsx",
-        lineNumber: 5,
-        columnNumber: 9
+        lineNumber: 9,
+        columnNumber: 5
     }, undefined);
 };
+_s(Header, "wHDNoc9+hDYiiXnqL8/ol9VGFrE=");
 _c = Header;
 exports.default = Header;
 var _c;
@@ -18523,13 +18541,7 @@ $RefreshReg$(_c, "Header");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../utils/constants":"dIVBf"}],"dIVBf":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
-const LOGO_URL = "https://imgs.search.brave.com/Pbe2EV53yjGzXDWd2yUX59i4xgLw-47L-ZsoFqtbllE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9keW5h/bWljLmJyYW5kY3Jv/d2QuY29tL2Fzc2V0/L2xvZ28vNmMxNTJk/MTYtMzg3OS00YTdh/LWE3Y2UtZmRhMDQ5/MzBlNjk0L2xvZ28t/c2VhcmNoLWdyaWQt/MXg_bG9nb1RlbXBs/YXRlVmVyc2lvbj0x/JnY9NjM3ODI5OTgz/ODkxOTcwMDAw";
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"c4zl2":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}],"c4zl2":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$3c85 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$3c85.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -18540,92 +18552,142 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
 var _resturantCard = require("./ResturantCard");
 var _resturantCardDefault = parcelHelpers.interopDefault(_resturantCard);
-var _mockdata = require("../utils/mockdata");
-var _mockdataDefault = parcelHelpers.interopDefault(_mockdata);
-var _react = require("react");
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
-    // const [resturantBigData, setResturantBigData] = useState(restaurantList)
-    const arr = (0, _react.useState)((0, _mockdataDefault.default));
-    // const [resturantBigData, setResturantBigData] = arr;
-    const resturantBigData = arr[0];
-    const setResturantBigData = arr[1];
-    // let resturantBigData = [
-    //   {
-    //     id: "151656",
-    //     name: "Dominos",
-    //     cloudinaryImageId: "enj3srsnhbltbom2ovvh",
-    //     costForTwo: "₹100 for two",
-    //     cuisines: ["North Indian", "Chinese", "Fast Food", "Beverages"],
-    //     avgRating: 1,
-    //     parentId: "71556",
-    //     avgRatingString: "1",
-    //     totalRatingsString: "365",
-    //   },
-    //   {
-    //     id: "151657",
-    //     name: "MCD",
-    //     cloudinaryImageId: "enj3srsnhbltbom2ovvh",
-    //     costForTwo: "₹100 for two",
-    //     cuisines: ["North Indian", "Chinese", "Fast Food", "Beverages"],
-    //     avgRating: 4.8,
-    //     parentId: "71556",
-    //     avgRatingString: "4.3",
-    //     totalRatingsString: "365",
-    //   },
-    // ];
-    // const submitHandler = () => {
-    //   resturantBigData.filter((res) => res.avgRating > 4);
-    // };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "container",
+    const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)([]);
+    const [filteredListOfRestaurants, setFilteredListOfRestaurants] = (0, _react.useState)([]);
+    const [serachData, setSerachData] = (0, _react.useState)("");
+    (0, _react.useEffect)(()=>{
+        console.log("Use Effect Called");
+        fetchData();
+    }, []);
+    const fetchData = async ()=>{
+        try {
+            const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.2706759&lng=77.4630265&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+            const data = await response.json();
+            const cards = data?.data?.cards[1].card?.card?.gridElements?.infoWithStyle?.restaurants || []; // Ensure it's always an array
+            // Transform API data into expected format
+            const transformedData = cards.map((item, index)=>{
+                const details = item?.info; // Extract restaurant details
+                if (!details) return null; // Skip invalid data
+                return {
+                    id: details.id || index,
+                    name: details.name || "Unknown",
+                    image: `https://media-assets.swiggy.com/${details.cloudinaryImageId}` || "",
+                    locality: details.locality || "Unknown Area",
+                    areaName: details.areaName || "Unknown",
+                    rating: details.avgRating || "No Rating",
+                    price: details.costForTwo || "N/A",
+                    cuisines: details.cuisines ? details.cuisines.join(", ") : "No Cuisines",
+                    deliveryTime: details.sla?.deliveryTime || "N/A",
+                    link: details.cta?.link || "#"
+                };
+            }).filter(Boolean); // Remove null values
+            setListOfRestaurants(transformedData); // Update state
+            setFilteredListOfRestaurants(transformedData); // Update list of restaurant
+        } catch (error) {
+            console.error("Error:", error);
+        }
+    };
+    // We are getting an error when we call this api from our local host because of cors policy
+    // So who is actually blocking us is browser our browser is not allowing us to call swiggy api
+    // We can bypass this using cors chrome extension
+    //Conditional Rendering is rendering something based on some condition
+    return listOfRestaurants.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/components/Body.jsx",
+        lineNumber: 67,
+        columnNumber: 5
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "filter",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    onClick: ()=>{
-                        setResturantBigData(resturantBigData.filter((res)=>res.info.avgRating > 4));
-                        console.log(resturantBigData);
-                    },
-                    className: "filter-btn",
-                    children: "Top Rated Resturant"
-                }, void 0, false, {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex justify-between items-center px-5",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex gap-5 text-xl w-2/4 justify-between py-2 px-2 rounded-md bg-gray-300",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "text",
+                                    placeholder: "Search Food or Restaurant",
+                                    className: "w-full border-none px-2 outline-none",
+                                    value: serachData,
+                                    onChange: (e)=>{
+                                        setSerachData(e.target.value);
+                                    }
+                                }, void 0, false, {
+                                    fileName: "src/components/Body.jsx",
+                                    lineNumber: 73,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "bg-blue-500 rounded-md text-white px-2 py-1",
+                                    onClick: ()=>{
+                                        const filter = listOfRestaurants.filter((res)=>res.name.toLowerCase().includes(serachData.toLowerCase()));
+                                        setFilteredListOfRestaurants(filter);
+                                    },
+                                    children: "Search"
+                                }, void 0, false, {
+                                    fileName: "src/components/Body.jsx",
+                                    lineNumber: 82,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Body.jsx",
+                            lineNumber: 72,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "m-5 px-3 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-700",
+                            children: "Top Rated Restaurants"
+                        }, void 0, false, {
+                            fileName: "src/components/Body.jsx",
+                            lineNumber: 95,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
                     fileName: "src/components/Body.jsx",
-                    lineNumber: 44,
+                    lineNumber: 71,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 43,
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "content",
-                children: resturantBigData.map((resturant)=>{
+                className: "restaurant-container",
+                children: filteredListOfRestaurants.map((item)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturantCardDefault.default), {
-                        resturantList: resturant
-                    }, resturant.info.id, false, {
+                        resData: item
+                    }, Math.random(), false, {
                         fileName: "src/components/Body.jsx",
-                        lineNumber: 57,
-                        columnNumber: 13
+                        lineNumber: 102,
+                        columnNumber: 18
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.jsx",
-                lineNumber: 54,
+                lineNumber: 100,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.jsx",
-        lineNumber: 42,
+        lineNumber: 69,
         columnNumber: 5
     }, undefined);
 };
-_s(Body, "ZBsK4C10kfNQiJz7tt+EZZ7iTLE=");
+_s(Body, "UKaPx9DUxESJUDO2daaeXdrp8Og=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -18636,7 +18698,7 @@ $RefreshReg$(_c, "Body");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"./ResturantCard":"l5dpi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","../utils/mockdata":"1r8tT","react/jsx-dev-runtime":"dVPUn","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}],"l5dpi":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./ResturantCard":"l5dpi","./Shimmer":"hJyAf","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"l5dpi":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$5684 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$5684.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -18647,1051 +18709,225 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const ResturantCardContainer = ({ resturantList })=>{
-    console.log(resturantList);
-    const { name, avgRating } = resturantList.info;
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const RestaurantCard = (props)=>{
+    const resData = props.resData;
+    const { name, image, rating, price, cuisines } = resData;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "res-container",
+        className: "restaurant-card",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "res-logo",
-                src: "https://imgs.search.brave.com/MIB3DIydW4zsAy-r81gUd2ybY0JjmwJrgq01XF_WWng/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kNHQ3/dDh5OHhxbzB0LmNs/b3VkZnJvbnQubmV0/L2FwcC8vcmVzaXpl/ZC84MThYNDUwL3Jl/c3RhdXJhbnQvMjIz/MjMxL3Jlc3RhdXJh/bnQyMjAxNjA5MTMx/ODQ0MTMuanBn",
-                alt: "res-img"
-            }, void 0, false, {
-                fileName: "src/components/ResturantCard.jsx",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: name
-            }, void 0, false, {
-                fileName: "src/components/ResturantCard.jsx",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: avgRating
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "restaurant-info flex flex-col gap-1"
             }, void 0, false, {
                 fileName: "src/components/ResturantCard.jsx",
                 lineNumber: 9,
-                columnNumber: 13
+                columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "4.5 stars"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "cardImage ",
+                src: image,
+                alt: "LogoImage"
             }, void 0, false, {
                 fileName: "src/components/ResturantCard.jsx",
                 lineNumber: 10,
-                columnNumber: 13
+                columnNumber: 9
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "34 min Delivery"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "font-bold text-xl mt-2",
+                children: name
             }, void 0, false, {
                 fileName: "src/components/ResturantCard.jsx",
-                lineNumber: 11,
-                columnNumber: 13
+                lineNumber: 17,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                className: "font-medium text-red-500",
+                children: [
+                    "Rating: ",
+                    rating
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ResturantCard.jsx",
+                lineNumber: 18,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "capitalize font-medium",
+                children: cuisines
+            }, void 0, false, {
+                fileName: "src/components/ResturantCard.jsx",
+                lineNumber: 19,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                className: "font-medium",
+                children: [
+                    "Prices : ",
+                    price,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ResturantCard.jsx",
+                lineNumber: 20,
+                columnNumber: 11
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/ResturantCard.jsx",
-        lineNumber: 6,
-        columnNumber: 9
+        lineNumber: 8,
+        columnNumber: 7
     }, undefined);
 };
-_c = ResturantCardContainer;
-exports.default = ResturantCardContainer;
+_c = RestaurantCard;
+exports.default = RestaurantCard;
 var _c;
-$RefreshReg$(_c, "ResturantCardContainer");
+$RefreshReg$(_c, "RestaurantCard");
 
   $parcel$ReactRefreshHelpers$5684.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","react/jsx-dev-runtime":"dVPUn","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1r8tT":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"hJyAf":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$ca0f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$ca0f.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ca0f.prelude(module);
+
+try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-const restaurantList = [
-    {
-        info: {
-            id: "151656",
-            name: "Dev International",
-            cloudinaryImageId: "enj3srsnhbltbom2ovvh",
-            locality: "khajri road",
-            areaName: "Mohan Nagar",
-            costForTwo: "\u20B9100 for two",
-            cuisines: [
-                "North Indian",
-                "Chinese",
-                "Fast Food",
-                "Beverages"
-            ],
-            avgRating: 4.3,
-            parentId: "71556",
-            avgRatingString: "4.3",
-            totalRatingsString: "365",
-            sla: {
-                deliveryTime: 61,
-                lastMileTravel: 12.3,
-                serviceability: "SERVICEABLE",
-                slaString: "60-65 mins",
-                lastMileTravelString: "12.3 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 22:30:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "\u20B9100 OFF",
-                subHeader: "ABOVE \u20B9249",
-                discountTag: "FLAT DEAL"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/dev-international-khajri-road-mohan-nagar-rest151656",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "234875",
-            name: "Adil Hotel",
-            cloudinaryImageId: "gp1ityra6utvzqn6ghnv",
-            locality: "Rautha Wada",
-            areaName: "Chhindwara Locality",
-            costForTwo: "\u20B9150 for two",
-            cuisines: [
-                "North Indian",
-                "Biryani",
-                "Tandoor"
-            ],
-            avgRating: 4.3,
-            parentId: "27123",
-            avgRatingString: "4.3",
-            totalRatingsString: "1.0K+",
-            sla: {
-                deliveryTime: 45,
-                lastMileTravel: 10.9,
-                serviceability: "SERVICEABLE",
-                slaString: "40-45 mins",
-                lastMileTravelString: "10.9 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 23:00:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "\u20B9125 OFF",
-                subHeader: "ABOVE \u20B9249",
-                discountTag: "FLAT DEAL"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/adil-hotel-rautha-wada-chhindwara-locality-rest234875",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "151649",
-            name: "Hotel Sai Nath & Sai Restaurant",
-            cloudinaryImageId: "vkhcohhmqfczycw9vsar",
-            locality: "railway station",
-            areaName: "Chhindwara Locality",
-            costForTwo: "\u20B9200 for two",
-            cuisines: [
-                "North Indian",
-                "South Indian",
-                "Chinese",
-                "Beverages",
-                "Fast Food",
-                "Desserts"
-            ],
-            avgRating: 4.2,
-            veg: true,
-            parentId: "101802",
-            avgRatingString: "4.2",
-            totalRatingsString: "878",
-            sla: {
-                deliveryTime: 52,
-                lastMileTravel: 11.3,
-                serviceability: "SERVICEABLE",
-                slaString: "50-55 mins",
-                lastMileTravelString: "11.3 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 22:30:00",
-                opened: true
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: "v1695133679/badges/Pure_Veg111.png",
-                        description: "pureveg"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "pureveg",
-                                    imageId: "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "FREE ITEM"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/hotel-sai-nath-and-sai-restaurant-railway-station-chhindwara-locality-rest151649",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "151518",
-            name: "Bakery World",
-            cloudinaryImageId: "mt2aggiscfl3yviatwng",
-            locality: "Parasia Road",
-            areaName: "Parasia Road",
-            costForTwo: "\u20B9250 for two",
-            cuisines: [
-                "Bakery",
-                "Ice Cream",
-                "Snacks",
-                "Beverages"
-            ],
-            avgRating: 4.2,
-            veg: true,
-            parentId: "40363",
-            avgRatingString: "4.2",
-            totalRatingsString: "238",
-            sla: {
-                deliveryTime: 43,
-                lastMileTravel: 11.7,
-                serviceability: "SERVICEABLE",
-                slaString: "40-45 mins",
-                lastMileTravelString: "11.7 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 22:30:00",
-                opened: true
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: "v1695133679/badges/Pure_Veg111.png",
-                        description: "pureveg"
-                    }
-                ]
-            },
-            isOpen: true,
-            aggregatedDiscountInfoV2: {},
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "pureveg",
-                                    imageId: "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/bakery-world-parasia-road-rest151518",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "658210",
-            name: "The Fusion Lounge",
-            cloudinaryImageId: "fa4944f0cfdcbca2bec1f3ab8e3db3f7",
-            locality: "Triloki nagar",
-            areaName: "Railway Station",
-            costForTwo: "\u20B9300 for two",
-            cuisines: [
-                "North Indian",
-                "South Indian",
-                "Chinese",
-                "Beverages",
-                "Fast Food",
-                "Desserts"
-            ],
-            avgRating: 4.1,
-            parentId: "395453",
-            avgRatingString: "4.1",
-            totalRatingsString: "266",
-            sla: {
-                deliveryTime: 58,
-                lastMileTravel: 10.2,
-                serviceability: "SERVICEABLE",
-                slaString: "55-60 mins",
-                lastMileTravelString: "10.2 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 23:00:00",
-                opened: true
-            },
-            badges: {},
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {},
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "10% OFF",
-                subHeader: "UPTO \u20B940"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/the-fusion-lounge-triloki-nagar-railway-station-rest658210",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "150591",
-            name: "Satkar Restaurant",
-            cloudinaryImageId: "rvxp5xbniat84r6efku2",
-            locality: "Sinchai Colony",
-            areaName: "Satkar Chowk",
-            costForTwo: "\u20B9250 for two",
-            cuisines: [
-                "North Indian",
-                "South Indian",
-                "Indian",
-                "Salads",
-                "Desserts"
-            ],
-            avgRating: 4.3,
-            veg: true,
-            parentId: "21553",
-            avgRatingString: "4.3",
-            totalRatingsString: "2.2K+",
-            sla: {
-                deliveryTime: 52,
-                lastMileTravel: 13.4,
-                serviceability: "SERVICEABLE",
-                slaString: "50-55 mins",
-                lastMileTravelString: "13.4 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 22:45:00",
-                opened: true
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: "v1695133679/badges/Pure_Veg111.png",
-                        description: "pureveg"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "pureveg",
-                                    imageId: "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "\u20B9100 OFF",
-                subHeader: "ABOVE \u20B9349",
-                discountTag: "FLAT DEAL"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/satkar-restaurant-sinchai-colony-satkar-chowk-rest150591",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "385824",
-            name: "The Belgian Waffle Co.",
-            cloudinaryImageId: "5116a385bac0548e06c33c08350fbf11",
-            locality: "Sinchai Colony",
-            areaName: "Mohan Nagar",
-            costForTwo: "\u20B9200 for two",
-            cuisines: [
-                "Waffle",
-                "Desserts",
-                "Ice Cream",
-                "Beverages"
-            ],
-            avgRating: 4.5,
-            veg: true,
-            parentId: "2233",
-            avgRatingString: "4.5",
-            totalRatingsString: "278",
-            sla: {
-                deliveryTime: 52,
-                lastMileTravel: 11.2,
-                serviceability: "SERVICEABLE",
-                slaString: "50-55 mins",
-                lastMileTravelString: "11.2 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 22:45:00",
-                opened: true
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: "v1695133679/badges/Pure_Veg111.png",
-                        description: "pureveg"
-                    }
-                ]
-            },
-            isOpen: true,
-            aggregatedDiscountInfoV2: {},
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "pureveg",
-                                    imageId: "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/the-belgian-waffle-co-sinchai-colony-mohan-nagar-rest385824",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "531441",
-            name: "Gourmet Ice Cream Cakes by Baskin Robbins",
-            cloudinaryImageId: "d679c532ca07a6f3fd6d89d603861412",
-            locality: "Satkar Square",
-            areaName: "Mohan Nagar",
-            costForTwo: "\u20B9200 for two",
-            cuisines: [
-                "Ice Cream Cakes",
-                "Desserts",
-                "Ice Cream",
-                "Bakery"
-            ],
-            avgRating: 5,
-            veg: true,
-            parentId: "21932",
-            avgRatingString: "5.0",
-            totalRatingsString: "3",
-            sla: {
-                deliveryTime: 54,
-                lastMileTravel: 11.2,
-                serviceability: "SERVICEABLE",
-                slaString: "50-55 mins",
-                lastMileTravelString: "11.2 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 23:00:00",
-                opened: true
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: "v1695133679/badges/Pure_Veg111.png",
-                        description: "pureveg"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "pureveg",
-                                    imageId: "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "50% OFF",
-                subHeader: "UPTO \u20B980"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/gourmet-ice-cream-cakes-by-baskin-robbins-satkar-square-mohan-nagar-rest531441",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "496348",
-            name: "Pizza Box",
-            cloudinaryImageId: "n7wbtvlifwbw5y4a7rrv",
-            locality: "Sanchar Colony",
-            areaName: "Chhindwara Locality",
-            costForTwo: "\u20B9300 for two",
-            cuisines: [
-                "Pizzas",
-                "Burgers",
-                "Beverages"
-            ],
-            avgRating: 4.4,
-            veg: true,
-            parentId: "3045",
-            avgRatingString: "4.4",
-            totalRatingsString: "205",
-            sla: {
-                deliveryTime: 72,
-                lastMileTravel: 14.5,
-                serviceability: "SERVICEABLE",
-                slaString: "70-75 mins",
-                lastMileTravelString: "14.5 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 22:00:00",
-                opened: true
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: "v1695133679/badges/Pure_Veg111.png",
-                        description: "pureveg"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "pureveg",
-                                    imageId: "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "10% OFF",
-                subHeader: "UPTO \u20B940"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/pizza-box-sanchar-colony-chhindwara-locality-rest496348",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "257428",
-            name: "Raajbagh Restaurant ",
-            cloudinaryImageId: "xvyrclhxftulsglktaek",
-            locality: "Seoni Road",
-            areaName: "Chhindwara Locality",
-            costForTwo: "\u20B9150 for two",
-            cuisines: [
-                "North Indian",
-                "South Indian",
-                "Indian",
-                "Chinese",
-                "Fast Food",
-                "Beverages"
-            ],
-            avgRating: 3.7,
-            veg: true,
-            parentId: "164019",
-            avgRatingString: "3.7",
-            totalRatingsString: "965",
-            sla: {
-                deliveryTime: 69,
-                lastMileTravel: 10.7,
-                serviceability: "SERVICEABLE",
-                slaString: "65-70 mins",
-                lastMileTravelString: "10.7 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 22:30:00",
-                opened: true
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: "v1695133679/badges/Pure_Veg111.png",
-                        description: "pureveg"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "pureveg",
-                                    imageId: "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "\u20B950 OFF",
-                subHeader: "ABOVE \u20B9199",
-                discountTag: "FLAT DEAL"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/raajbagh-restaurant-seoni-road-chhindwara-locality-rest257428",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "531439",
-            name: "Baskin Robbins - Ice Cream Desserts",
-            cloudinaryImageId: "85ccae4e3576f9330af102c46ca85395",
-            locality: "satkar square Prasia Road",
-            areaName: "Chhindwara",
-            costForTwo: "\u20B9250 for two",
-            cuisines: [
-                "Desserts",
-                "Ice Cream"
-            ],
-            avgRating: 4.9,
-            veg: true,
-            parentId: "5588",
-            avgRatingString: "4.9",
-            totalRatingsString: "36",
-            sla: {
-                deliveryTime: 51,
-                lastMileTravel: 11.2,
-                serviceability: "SERVICEABLE",
-                slaString: "50-55 mins",
-                lastMileTravelString: "11.2 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 23:00:00",
-                opened: true
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: "v1695133679/badges/Pure_Veg111.png",
-                        description: "pureveg"
-                    }
-                ]
-            },
-            isOpen: true,
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "pureveg",
-                                    imageId: "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            aggregatedDiscountInfoV3: {
-                header: "50% OFF",
-                subHeader: "UPTO \u20B980"
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/baskin-robbins-ice-cream-desserts-satkar-square-prasia-road-chhindwara-rest531439",
-            type: "WEBLINK"
-        }
-    },
-    {
-        info: {
-            id: "150597",
-            name: "Scoops Fast Food And Ice Cream",
-            cloudinaryImageId: "fm3rs3g6z7ibfhesmxnu",
-            locality: "Irrigation Colony",
-            areaName: "Khajri Road",
-            costForTwo: "\u20B9200 for two",
-            cuisines: [
-                "Bakery",
-                "Ice Cream",
-                "Snacks",
-                "Beverages"
-            ],
-            avgRating: 4.1,
-            veg: true,
-            parentId: "179482",
-            avgRatingString: "4.1",
-            totalRatingsString: "384",
-            sla: {
-                deliveryTime: 75,
-                lastMileTravel: 12.1,
-                serviceability: "SERVICEABLE",
-                slaString: "70-75 mins",
-                lastMileTravelString: "12.1 km",
-                iconType: "ICON_TYPE_EMPTY"
-            },
-            availability: {
-                nextCloseTime: "2024-10-15 22:30:00",
-                opened: true
-            },
-            badges: {
-                imageBadges: [
-                    {
-                        imageId: "v1695133679/badges/Pure_Veg111.png",
-                        description: "pureveg"
-                    }
-                ]
-            },
-            isOpen: true,
-            aggregatedDiscountInfoV2: {},
-            type: "F",
-            badgesV2: {
-                entityBadges: {
-                    imageBased: {
-                        badgeObject: [
-                            {
-                                attributes: {
-                                    description: "pureveg",
-                                    imageId: "v1695133679/badges/Pure_Veg111.png"
-                                }
-                            }
-                        ]
-                    },
-                    textBased: {},
-                    textExtendedBadges: {}
-                }
-            },
-            differentiatedUi: {
-                displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                differentiatedUiMediaDetails: {
-                    lottie: {},
-                    video: {}
-                }
-            },
-            reviewsSummary: {},
-            displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            restaurantOfferPresentationInfo: {},
-            externalRatings: {
-                aggregatedRating: {
-                    rating: "--"
-                }
-            },
-            ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-        },
-        analytics: {
-            context: "seo-data-76752cf7-37f2-467d-a1a7-6c40d7b4a593"
-        },
-        cta: {
-            link: "https://www.swiggy.com/city/chhindwara/scoops-fast-food-and-ice-cream-irrigation-colony-khajri-road-rest150597",
-            type: "WEBLINK"
-        }
-    }
-];
-exports.default = restaurantList;
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Shimmer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "shimmer-container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 6,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "shimmer-card"
+            }, void 0, false, {
+                fileName: "src/components/Shimmer.jsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Shimmer.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Shimmer;
+exports.default = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["icAAj","blcJa"], "blcJa", "parcelRequire3c17", {}, null, null, "http://localhost:1234")
+  $parcel$ReactRefreshHelpers$ca0f.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["icAAj","blcJa"], "blcJa", "parcelRequire3c17", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=platr.cb65f72e.js.map

@@ -1,16 +1,25 @@
-const ResturantCardContainer = ({resturantList})=>{
-    console.log(resturantList);
-    const {name, avgRating} = resturantList.info;
+import React from 'react';
 
+const RestaurantCard = (props) => {
+    const resData = props.resData;
+    const {name, image , rating, price, cuisines} = resData;
+  
     return (
-        <div className="res-container">
-            <img className="res-logo" src="https://imgs.search.brave.com/MIB3DIydW4zsAy-r81gUd2ybY0JjmwJrgq01XF_WWng/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9kNHQ3/dDh5OHhxbzB0LmNs/b3VkZnJvbnQubmV0/L2FwcC8vcmVzaXpl/ZC84MThYNDUwL3Jl/c3RhdXJhbnQvMjIz/MjMxL3Jlc3RhdXJh/bnQyMjAxNjA5MTMx/ODQ0MTMuanBn" alt="res-img" />
-            <h3>{name}</h3>
-            <h4>{avgRating}</h4>
-            <p>4.5 stars</p>
-            <h4>34 min Delivery</h4>
+      <div className="restaurant-card">
+        <div className="restaurant-info flex flex-col gap-1"></div>
+        <img
+          className="cardImage "
+          src={
+            image
+          }
+          alt="LogoImage"
+        />
+        <h2 className='font-bold text-xl mt-2'>{name}</h2>
+        <h3 className='font-medium text-red-500'>Rating: {rating}</h3>
+          <p className='capitalize font-medium'>{cuisines}</p>
+          <h4 className='font-medium'>Prices : {price} </h4>
         </div>
-    )
-}
+    );
+  };
 
-export default ResturantCardContainer;
+  export default RestaurantCard;
