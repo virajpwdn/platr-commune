@@ -9,7 +9,6 @@ const Body = () => {
   const [serachData, setSerachData] = useState("");
 
   useEffect(() => {
-    console.log("Use Effect Called");
     fetchData();
   }, []);
 
