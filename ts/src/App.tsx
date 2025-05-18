@@ -1,13 +1,8 @@
-import Hero from "./components/Hero/Hero"
-import Resturants from "./components/Resturant/Resturants"
+import { RouterProvider } from "react-router-dom"
+import appRoutes from "./Router/Routes"
 
 const App = () => {
-  return (
-    <div>
-      <Hero />
-      <Resturants />
-    </div>
-  )
+  return <RouterProvider router={appRoutes} />
 }
 
 export default App

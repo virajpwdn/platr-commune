@@ -93,7 +93,7 @@ const Resturants = () => {
   };
 
   return foodData?.length === undefined ? (
-    <div className="p-24 flex gap-10 flex-wrap">
+    <div className="p-24 flex gap-10 flex-wrap max-sm:p-5 max-sm:flex-col">
       {Array.from({ length: 6 }).map((_, idx) => {
         return <Shimmer key={idx} />;
       })}

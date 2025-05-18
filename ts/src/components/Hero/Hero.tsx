@@ -1,9 +1,9 @@
-import Navbar from "../Navbar/Navbar"
-import Body from "./Body"
+import Resturants from "../Resturant/Resturants"
+
 const Hero = () => {
   return (
-    <div className="bg-black text-white p-10 px-24">
-        <Navbar />
+    <div>
+        <Resturants />
         {/* <Body /> */}
     </div>
   )
