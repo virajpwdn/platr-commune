@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 const Hamburger = () => {
   return (
-    <div>
-      <ul className="flex items-center gap-4">
+    <div className="relative w-1/2">
+      <ul className="flex h-screen top-0 items-center gap-4 flex-col absolute left-20 bg-black p-10">
         <Link to={"/about"}>About</Link>
         <Link to={"/contact"}>Contact us</Link>
         <button className="bg-[#FF5200] px-6 py-2 rounded-md">Login</button>
@@ -12,3 +14,5 @@ const Hamburger = () => {
     </div>
   );
 };
+
+export default Hamburger;

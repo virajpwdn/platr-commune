@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import Hamburger from "./Hamburger";
 
 const Navbar = () => {
   return (
@@ -11,6 +12,9 @@ const Navbar = () => {
             alt="logo"
           />
         </Link>
+      </div>
+      <div className="hidden max-sm:block">
+        <Hamburger />
       </div>
       <div className="flex items-center max-sm:hidden">
         <ul className="flex items-center gap-4">
