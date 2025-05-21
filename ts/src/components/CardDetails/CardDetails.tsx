@@ -6,31 +6,44 @@ interface PropsData {
   costForTwoMessage: string;
   cuisines: Array<string>;
   id: string;
+  totalRatingsString: string;
+  availabilityServiceabilityMessage: string;
+  avgRating: string;
 }
 
-const RatingModel = (props: PropsData) => {
-  const { name, areaName, costForTwoMessage, cuisines, id, avgRating, city } =
-    props.resInfoProp;
-    // console.log(props.resInfoProp);
+interface PropsWrapper {
+  resInfoProp: PropsData;
+}
+
+const RatingModel = (props: PropsWrapper) => {
+  const {
+    areaName,
+    costForTwoMessage,
+    cuisines,
+    avgRating,
+    totalRatingsString,
+    availabilityServiceabilityMessage,
+  } = props.resInfoProp;
+
   return (
     <div className="bg-purple-500 p-5 rounded-lg bg-gradient-to-b from-white via-zinc-200 to-slate-300">
       <div className="bg-white p-10 shadow-lg rounded-lg">
         <div className="flex gap-3 items-center relative">
           <h4>
             <span className="pr-2">⭐️</span>
-            {avgRating}
+            {avgRating + "(" + totalRatingsString + ")"}
           </h4>
           <p>•</p>
           <h4>{costForTwoMessage}</h4>
         </div>
 
         <div>
-          <p>cusines</p>
+          <p>{cuisines ? Object.values(cuisines).join(", ") : "cusines"}</p>
         </div>
         <div>
-          <ul className="list-disc">
+          <ul className="list-disc ml-4">
             <li>Outlet {areaName}</li>
-            <li>{city}</li>
+            <li>{availabilityServiceabilityMessage}</li>
           </ul>
         </div>
       </div>
@@ -39,7 +52,7 @@ const RatingModel = (props: PropsData) => {
 };
 
 const CardDetails = () => {
-  const [resInfo, setResInfo] = useState({});
+  const [resInfo, setResInfo] = useState<PropsData | null>(null);
   useEffect(() => {
     getData();
   }, []);
@@ -61,8 +74,14 @@ const CardDetails = () => {
 
   return (
     <div className="max-w-[60%] m-auto">
-      <h1 className="text-3xl py-8 font-bold">Title of Restaurent</h1>
-      <RatingModel resInfoProp={resInfo} />
+      {resInfo ? (
+        <>
+          <h1 className="text-3xl py-8 font-bold">{resInfo.name}</h1>
+          <RatingModel resInfoProp={resInfo} />
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
     </div>
   );
 };
