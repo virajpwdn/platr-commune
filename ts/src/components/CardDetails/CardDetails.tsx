@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import Shimmer from "../shimmer/Shimmer";
+import { BASE_URL } from "../../utils/constants";
+import { useParams } from "react-router-dom";
 
 interface PropsData {
   name: string;
@@ -38,7 +41,7 @@ const RatingModel = (props: PropsWrapper) => {
         </div>
 
         <div>
-          <p>{cuisines ? Object.values(cuisines).join(", ") : "cusines"}</p>
+          <p>{cuisines ? Object.values(cuisines).join(", ") : ""}</p>
         </div>
         <div>
           <ul className="list-disc ml-4">
@@ -53,24 +56,27 @@ const RatingModel = (props: PropsWrapper) => {
 
 const CardDetails = () => {
   const [resInfo, setResInfo] = useState<PropsData | null>(null);
+  const { resId } = useParams();
+
   useEffect(() => {
-    getData();
-  }, []);
+    const getData = async () => {
+      try {
+        const response = await fetch(BASE_URL + "restaurantId=" + resId);
 
-  const getData = async () => {
-    try {
-      const response = await fetch(
-        "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=19.0759837&lng=72.8776559&restaurantId=28405&catalog_qa=undefined&submitAction=ENTER"
-      );
+        const data = await response.json();
+        console.log(data);
+        // console.log(data?.data?.cards[2]);
+        setResInfo(data?.data?.cards[2]?.card?.card?.info);
+        //   console.log(data.data.cards[2].card.card.info);
+      } catch (error) {
+        console.log(error);
+      }
+    };
 
-      const data = await response.json();
-      console.log(data.data?.cards[2]);
-      setResInfo(data.data?.cards[2]?.card?.card?.info);
-      //   console.log(data.data.cards[2].card.card.info);
-    } catch (error) {
-      console.log(error);
+    if (resId) {
+      getData();
     }
-  };
+  }, [resId]);
 
   return (
     <div className="max-w-[60%] m-auto">
@@ -80,7 +86,7 @@ const CardDetails = () => {
           <RatingModel resInfoProp={resInfo} />
         </>
       ) : (
-        <p>Loading...</p>
+        <Shimmer />
       )}
     </div>
   );

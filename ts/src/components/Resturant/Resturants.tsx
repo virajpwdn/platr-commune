@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cards from "./Cards";
 import Shimmer from "../shimmer/Shimmer";
+import { Link } from "react-router-dom";
 
 interface cardItems {
   info?: {
@@ -119,7 +120,7 @@ const Resturants = () => {
         {filteredData?.map((elem) => {
           return (
             <div key={elem.id} className="card-container bg-white">
-              <Cards data={elem} />
+              {<Link to={"/details/restaurant/"+elem.id}><Cards data={elem} /></Link>}
             </div>
           );
         })}
