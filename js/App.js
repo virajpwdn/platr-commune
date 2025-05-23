@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import About from "./src/components/About";
 import Error from "./src/components/Error";
 import Contact from "./src/components/Contact";
+import AboutClass from "./src/components/AboutClass";
 
 const AppLayout = () => {
   return (
@@ -34,6 +35,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />
+      },
+      {
+        path: "/aboutclass",
+        element: <AboutClass details={"this are class based details"} />
       }
     ],
     errorElement: <Error />,

@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 
 const Header = () => {
-  console.log("Header component is Rendered");
+  // console.log("Header component is Rendered");
   let [btnName , setBtnName] = useState('Login');
   // Creating a state variable
 
   useEffect(()=>{
-    console.log("useEffect is Rendered");
+    // console.log("useEffect is Rendered");
   },[])
 
  
