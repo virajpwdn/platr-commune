@@ -8,16 +8,16 @@ class AboutClass extends React.Component {
       count: 0,
     };
 
-    console.log("Child Constructor is Called");
+    console.log(`${this.props.name} Child Constructor is Called`);
   }
 
   componentDidMount() {
-    console.log("child component is mounted");
+    console.log(`${this.props.name} child component is mounted`);
   }
 
   render() {
     const { count } = this.state;
-    console.log("Child Component is rendered");
+    console.log(`${this.props.name} Child Component is rendered`);
     return (
       <div>
         <h1>This is class based Component</h1>

@@ -15,7 +15,10 @@ class About extends React.Component {
     return (
       <>
         <h1>This is Parent About Page</h1>
-        <AboutClass />
+        <AboutClass name="first" />
+        <AboutClass name="second" />
+        <AboutClass name="third" />
+        <AboutClass name="fourth" />
       </>
     );
   }
