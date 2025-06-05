@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router';
+import useOnlineStatus from '../utils/hooks/useOnlineStatus';
 
 const Header = () => {
   // console.log("Header component is Rendered");
@@ -10,6 +11,8 @@ const Header = () => {
     // console.log("useEffect is Rendered");
   },[])
 
+  const isOnline = useOnlineStatus()
+  console.log(isOnline);
  
 
   return (
@@ -30,6 +33,7 @@ const Header = () => {
           <button className='login' onClick={()=> {
             btnName === "Login" ? setBtnName('Logout') : setBtnName('Login');
           } }>{btnName}</button>
+          <li>{isOnline ? "Online ✅" : "Offline 🔴"}</li>
         </ul>
       </div>
     </div>

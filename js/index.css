@@ -13,6 +13,7 @@ html, body {
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: 2px solid black;
     border-radius: 20px;
     padding: 0px 50px;
