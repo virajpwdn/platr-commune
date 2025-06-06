@@ -13,8 +13,10 @@ const useRestaurentFetch = () => {
       );
       const data = await response.json();
 
+      console.log("data", data)
+
       const cards =
-        data?.data?.cards[3].card?.card?.gridElements?.infoWithStyle
+        data?.data?.cards[4].card?.card?.gridElements?.infoWithStyle
           ?.restaurants || []; // Ensure it's always an array
 
       // Transform API data into expected format

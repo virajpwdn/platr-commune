@@ -1,13 +1,16 @@
 // import "./index.css";
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
-import About from "./src/components/About";
+// import About from "./src/components/About";
 import Error from "./src/components/Error";
 import Contact from "./src/components/Contact";
 import AboutClass from "./src/components/AboutClass";
+import Shimmer from "./src/components/Shimmer";
+
+const About = lazy(() => import("./src/components/About"));
 
 const AppLayout = () => {
   return (
@@ -29,17 +32,22 @@ const appRouter = createBrowserRouter([
         errorElement: <Error />,
       },
       {
+        // Here we have implemented lazy loading and the fallback means in the meanwile react is showing whatenve we have written in suspence
         path: "/about",
-        element: <About />,
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <About />
+          </Suspense>
+        ),
       },
       {
         path: "/contact",
-        element: <Contact />
+        element: <Contact />,
       },
       {
         path: "/aboutclass",
-        element: <AboutClass details={"this are class based details"} />
-      }
+        element: <AboutClass details={"this are class based details"} />,
+      },
     ],
     errorElement: <Error />,
   },

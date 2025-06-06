@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import RestaurantCard from "./ResturantCard";
+import RestaurantCard,{withRatingsLabel} from "./ResturantCard";
 import Shimmer from "./Shimmer";
 import useRestaurentFetch from "../utils/hooks/useRestaurentFetch";
 
@@ -23,7 +23,6 @@ const Body = () => {
   // We can bypass this using cors chrome extension
 
   //Conditional Rendering is rendering something based on some condition
-  console.log(listOfRestaurants)
   return listOfRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
@@ -60,7 +59,7 @@ const Body = () => {
       </div>
       <div className="restaurant-container">
         {filteredListOfRestaurants?.map((item) => {
-          return <RestaurantCard key={Math.random()} resData={item} />;
+          return <RestaurantCard key={Math.random()} resData={item} />
         })}
       </div>
     </div>
