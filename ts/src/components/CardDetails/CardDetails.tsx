@@ -64,10 +64,10 @@ const CardDetails = () => {
         const response = await fetch(BASE_URL + "restaurantId=" + resId);
 
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         // console.log(data?.data?.cards[2]);
         setResInfo(data?.data?.cards[2]?.card?.card?.info);
-        //   console.log(data.data.cards[2].card.card.info);
+        // console.log("data", resInfo?.);
       } catch (error) {
         console.log(error);
       }

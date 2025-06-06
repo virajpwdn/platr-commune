@@ -11,9 +11,9 @@ interface ResturantData {
   link: string;
 }
 
-const Cards = ({data}: {data: ResturantData}) => {
-    // console.log(props.data)
-    const {name, image, locality, price, rating, cuisines, areaName} = data;
+const Cards = ({ data }: { data: ResturantData }) => {
+  // console.log(props.data)
+  const { name, image, locality, price, rating, cuisines, areaName } = data;
   return (
     <div className="w-96 rounded-md bg-white shadow-md">
       <img
@@ -48,6 +48,18 @@ const Cards = ({data}: {data: ResturantData}) => {
       </div>
     </div>
   );
+};
+
+export const withRatingsLabel = (Resturants) => {
+  return (props) => {
+    console.log(props);
+    return (
+      <>
+        <label className="absolute bg-blue-400 text-white font-semibold ">Promoted</label>
+        <Resturants {...props} />
+      </>
+    );
+  };
 };
 
 export default Cards;

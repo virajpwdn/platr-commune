@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Cards from "./Cards";
+import Cards, { withRatingsLabel } from "./Cards";
 import Shimmer from "../shimmer/Shimmer";
 import { Link } from "react-router-dom";
 
@@ -39,6 +39,8 @@ const Resturants = () => {
   const [foodData, setFoodData] = useState<ResturantDataFiltered[]>();
   const [filteredData, setFilteredData] = useState<ResturantDataFiltered[]>();
   const [value, setValue] = useState("");
+
+  const ResturantRating = withRatingsLabel(Cards);
 
   useEffect(() => {
     generateData();
@@ -85,7 +87,7 @@ const Resturants = () => {
   };
 
   const search = (e: React.FormEvent<HTMLFormElement>): void => {
-		e.preventDefault();
+    e.preventDefault();
     if (!foodData) return;
     const filter = foodData?.filter((res) =>
       res.name.toLowerCase().includes(value.toLowerCase())
@@ -118,10 +120,15 @@ const Resturants = () => {
       </form>
       <div className="flex gap-10 p-24 flex-wrap">
         {filteredData?.map((elem) => {
+          // console.log("ELEM", elem)
           return (
-            <div key={elem.id} className="card-container bg-white">
-              {<Link to={"/details/restaurant/"+elem.id}><Cards data={elem} /></Link>}
-            </div>
+            <Link to={"/details/restaurant/" + elem.id} className="block">
+              {elem.rating === 4.5 ? (
+                <ResturantRating data={elem} />
+              ) : (
+                <Cards data={elem} />
+              )}
+            </Link>
           );
         })}
       </div>
