@@ -15,12 +15,12 @@ const Navbar = () => {
   const { userName, setDemo }: ContextProps = useContext(UserContext);
   setDemo("Adam");
 
-  // const navigate = useNavigate();
-  // const store = useSelector((store) => store.cart.items);
+  const navigate = useNavigate();
+  const store = useSelector((store) => store.cart.items);
   // const dispatch = useDispatch();
 
   const addToCartHandler = () => {
-      
+      navigate("/cart");
   };
 
   return (
