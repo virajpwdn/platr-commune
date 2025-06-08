@@ -1,7 +1,9 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import Hamburger from "./Hamburger";
 import { UserContext } from "../../context/userContext.ts";
-import { useContext, type Dispatch, type SetStateAction } from "react";
+import { useContext } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addItems } from "../../Store/cartSlice.ts";
 
 interface ContextProps {
   userName: string;
@@ -10,8 +12,17 @@ interface ContextProps {
 }
 
 const Navbar = () => {
-  const {userName, setDemo}: ContextProps = useContext(UserContext);
-  setDemo("Adam")
+  const { userName, setDemo }: ContextProps = useContext(UserContext);
+  setDemo("Adam");
+
+  // const navigate = useNavigate();
+  // const store = useSelector((store) => store.cart.items);
+  // const dispatch = useDispatch();
+
+  const addToCartHandler = () => {
+      
+  };
+
   return (
     <div className="flex justify-between bg-black p-10 text-white w-full">
       <div className="image-container h-10">
@@ -31,8 +42,11 @@ const Navbar = () => {
           <Link to={"/about"}>About</Link>
           <Link to={"/contact"}>Contact us</Link>
           <button className="bg-[#FF5200] px-6 py-2 rounded-md">Login</button>
-          <button className="px-4 py-2 border border-zinc-200 rounded-md">
-            Sign up
+          <button
+            onClick={addToCartHandler}
+            className="px-4 py-2 border border-zinc-200 rounded-md"
+          >
+            cart ({store?.length})
           </button>
           <h4>{userName}</h4>
         </ul>
