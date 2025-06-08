@@ -1,7 +1,7 @@
 import { CDN } from "../../utils/constants";
 
 const ResList = ({ foodListData }) => {
-  console.log("Food List Data", foodListData);
+  // console.log("Food List Data", foodListData);
   return (
     <div>
       <ul className="space-y-5 relative">

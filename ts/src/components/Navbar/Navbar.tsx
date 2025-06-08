@@ -1,7 +1,17 @@
 import { Link } from "react-router";
 import Hamburger from "./Hamburger";
+import { UserContext } from "../../context/userContext.ts";
+import { useContext, type Dispatch, type SetStateAction } from "react";
+
+interface ContextProps {
+  userName: string;
+  password: string;
+  // setUser: Dispatch<SetStateAction<string>>
+}
 
 const Navbar = () => {
+  const {userName, setDemo}: ContextProps = useContext(UserContext);
+  setDemo("Adam")
   return (
     <div className="flex justify-between bg-black p-10 text-white w-full">
       <div className="image-container h-10">
@@ -24,6 +34,7 @@ const Navbar = () => {
           <button className="px-4 py-2 border border-zinc-200 rounded-md">
             Sign up
           </button>
+          <h4>{userName}</h4>
         </ul>
       </div>
     </div>

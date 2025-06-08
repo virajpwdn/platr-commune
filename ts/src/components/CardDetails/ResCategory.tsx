@@ -1,11 +1,10 @@
 import { useState } from "react";
 import ResList from "./ResList";
 
-const ResCategory = ({ resCategoryData }) => {
-    const [showItems, setShowItems] = useState<boolean>(false)
+const ResCategory = ({ resCategoryData, items, setShowItems }) => {
     
     const accordianOpenHandler = ()=>{
-        setShowItems(!showItems);
+        setShowItems();
     }
   return (
     <div>
@@ -19,7 +18,7 @@ const ResCategory = ({ resCategoryData }) => {
         </div>
         {/* Body */}
         <div>
-          {showItems && <ResList foodListData={resCategoryData?.itemCards} />}
+          {items && <ResList foodListData={resCategoryData?.itemCards} />}
         </div>
         <div className="border-b border-black/20 h-1 mt-6"></div>
       </div>

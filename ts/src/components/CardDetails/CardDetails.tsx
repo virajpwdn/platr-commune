@@ -23,7 +23,7 @@ interface PropsWrapper {
 interface card {
   card: {
     card: {
-      ["@type"]: string;
+      ["@type"]: string,
     };
   };
 }
@@ -44,6 +44,8 @@ const RatingModel = (props: PropsWrapper) => {
 
   const category = props.category;
   console.log("category", category);
+
+  const [showItems, setShowItems] = useState(null);;
 
   return (
     <>
@@ -72,8 +74,15 @@ const RatingModel = (props: PropsWrapper) => {
       {/* Accordian */}
       <div className="mt-10">
         {category &&
-          category.map((category, idx) => {
-            return <ResCategory key={idx} resCategoryData={category?.card?.card} />;
+          category.map((category: RestaurantCategories, idx) => {
+            return (
+              <ResCategory
+                key={idx}
+                resCategoryData={category?.card?.card}
+                items={idx === showItems ? true : false}
+                setShowItems={()=> setShowItems(idx)}
+              />
+            );
           })}
       </div>
     </>
@@ -84,7 +93,6 @@ const CardDetails = () => {
   const [resInfo, setResInfo] = useState<PropsData | null>(null);
   const [categoriesData, setCategoriesData] = useState([]);
   const { resId } = useParams();
-  const [showItems, setShowItems] = useState<boolean>(false)
 
   useEffect(() => {
     const getData = async () => {
@@ -125,7 +133,7 @@ const CardDetails = () => {
       {resInfo ? (
         <>
           <h1 className="text-3xl py-8 font-bold">{resInfo.name}</h1>
-           <RatingModel resInfoProp={resInfo} category={categories} />
+          <RatingModel resInfoProp={resInfo} category={categories} />
         </>
       ) : (
         <Shimmer />
